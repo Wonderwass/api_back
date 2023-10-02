@@ -1,0 +1,35 @@
+###
+GET http://localhost/api_back/getuserlist/
+
+###
+POST http://localhost/api_back/
+
+{
+    "pseudo": "robin des bois",
+    "password": "robs60",
+    "action": "login"
+}
+
+###
+POST http://localhost/api_back/
+
+{
+    "pseudo": "dfg",
+    "password": "silica",
+    "firstname": "silica",
+    "lastname": "sao",
+    "action": "register"
+}
+
+###
+POST http://localhost/api_back/
+
+{
+    "expeditor": 3,
+    "receiver": 7,
+    "message": "contenu du message",
+    "action": "send message"
+}
+
+###
+GET http://localhost/api_back/getListMessage/2/5
